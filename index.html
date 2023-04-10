@@ -22,23 +22,36 @@
             </div>
             <div class="input-wrapper">
                 <label for="name_titularID">Nome do titular</label>
-                <input type="text" id="name_titularID" placeholder="Nome como está no cartão">
+                <input type="text" id="name_titularID" placeholder="Nome como está no cartão" required>
+                <div class="warning">
+                    <img src="https://i.ibb.co/F6fN0Dp/Warning.png" alt="Icone de alerta">
+                    Insira um número de cartão válido
+                </div>
             </div>
             <div class="col-2 flex">
                 <div class="input-wrapper">
                     <label for="dateValidID">Validade</label>
-                    <input type="text" id="dateValidID" placeholder="mm/aa">
+                    <input type="text" id="dateValidID" placeholder="mm/aa" required>
                 </div>
                 <div class="input-wrapper">
-                    <label class="flex help" for="cvvID">CVV</label>
+                    <label class="flex help" for="cvvID">CVV
+                        <img src="https://i.ibb.co/JvcTYhJ/Vector.png" alt="Icone de duvida"
+                            title='Esse número está, geralmente nas costas do seu cartão'>
+                    </label>
                     <input type="text" id="cvvID" placeholder="***">
                 </div>
             </div>
-
             </div>
         </section>
-    </form>
+        <section class="security-info flex">
+            <img src="https://i.ibb.co/J3Qgd2Y/Vector-1.png" alt="Icone de segurança">
+            <p>Seus dados estão seguros</p>
+        </section>
 
+        <button class="btn-enviar " type="submit">Adicionar cartão</button>
+    </form>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="Java.js"></script>
 </body>
 
 </html>

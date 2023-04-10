@@ -70,11 +70,28 @@ form{
     gap:2.4rem;
     flex-direction: column;
 }
+input:invalid:focus{
+    border: 0.15rem solid #FB7185;
+}
+input:invalid:focus + .warning{
+    gap: .4rem;
+    color: #FB7185;
+    align-items: center;
+    display: flex;
+    font-size: 1.4rem;
+    margin-top: 0.8rem;
+}
+input + .warning{
+    display: none;
+}
 
 label{
     color: white;
     font-weight: 600;
     font-size: 1.4rem;
+
+    gap: .4rem;
+    align-items: center;
 }
 
 input{
@@ -97,4 +114,35 @@ input:focus{
 }
 .col-2 .input-wrapper:nth-child(1){
     flex-basis: 60%;
+}
+
+.help{
+    height: 1.6rem;
+    width: 1.6rem;
+}
+
+.security-info{
+    justify-content: center;
+    color: white;
+    margin-top: 4.8rem;
+    gap: .8rem;
+    font-size: 1.4rem;
+}
+.btn-enviar{
+    width: 100%;
+    padding: 1.6rem;
+    margin-top: 10rem;
+    border: none;
+
+    background: #9333EA;
+    color: white;
+    font-weight: 600;
+    font-size: 1.8rem;
+    border-radius: 0.4rem;
+    line-height: 2.4rem;
+    cursor: pointer;
+    transition: background .5s;
+}
+.btn-enviar:hover{
+    background: #A855F7;;
 }
